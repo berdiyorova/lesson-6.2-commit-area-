@@ -13,9 +13,6 @@ def roman_to_int(s):
             num += roman[s[i]]
             s = s[:i]
 
-        elif roman[s[i]] > roman[s[i - 1]]:
-            num += roman[s[i]] - roman[s[i - 1]]
-            s = s[:i]
-            s = s[:i - 1]
+
         i = len(s) - 1
     return num
